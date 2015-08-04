@@ -1,0 +1,15 @@
+TYPO3:
+  Flow:
+    persistence:
+      backendOptions:
+        dbname: 'post'
+        user: 'root'
+        password: 'ess:3ntials'
+        host: '127.0.0.1'
+    security:
+          enable: TRUE
+          authentication:
+            authenticationStrategy: oneToken
+            providers:
+              DefaultProvider:
+                provider: PersistedUsernamePasswordProvider

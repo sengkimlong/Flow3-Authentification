@@ -1,0 +1,41 @@
+-
+  name: 'Welcome'
+  uriPattern: ''
+  defaults:
+    '@package': 'SKL.Test'
+    '@controller': 'User'
+    '@action': 'index'
+    '@format': 'html'
+
+-
+  name: 'Form'
+  uriPattern: 'forms'
+  defaults:
+    '@package': 'SKL.Test'
+    '@controller': 'Form'
+    '@action': 'index'
+    '@format': 'html'
+
+-
+  name: 'Form action'
+  uriPattern: 'forms/{form}'
+  defaults:
+    '@package':     'SKL.Test'
+    '@controller':  'Form'
+    '@action':      'show'
+  routeParts:
+    form:
+      objectType: 'SKL\Test\Domain\Model\Form'
+      uriPattern: '{name}'
+
+-
+  name: 'Form'
+  uriPattern: 'profiles/{form}'
+  defaults:
+    '@package':     'SKL.Test'
+    '@controller':  'Form'
+    '@action':      'profile'
+  routeParts:
+    form:
+      objectType: 'SKL\Test\Domain\Model\Form'
+      uriPattern: '{name}'
